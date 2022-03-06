@@ -8,11 +8,19 @@ Player Movement can be achieved in different ways in unity, depending on the spe
 * Acceleration - Same as ForceMode.Force except that it doesn't take mass into account. No matter how big the mass of the object, it will accelerate at a constant rate
 * VelocityChange - Same as ForceMode.Impulse and again doesn't take mass into account. It will literally add the force to the Object's velocity in a single frame
 
-Understanding these different types of forces can be important to shaping the structure of the game as movement is probably the basic feature of any game. For example, the following code shows how a jump action that propels the object upward based on ‘space’ key input from the keyboard can be made to work by applying a velocity change to the Rigidbody component attached to the Player GameObject.
+Understanding these different types of forces can be important to shaping the structure of the game as movement is probably the basic feature of any game. For example, the following code shows how a jump action that propels the object upward based on pressing a key input from the keyboard can be made to work by applying a velocity change to the Rigidbody component attached to the Player GameObject.
 
-![Velocity\_Jump](https://user-images.githubusercontent.com/44625252/152804627-d0824397-b20b-470c-acb0-53c6a54ac500.PNG)
-
+```
+  if ((vertical) && (isPickUp != true) && (onGround == true))
+  {
+     player_animator.SetBool("IsJump", true);
+     player_Rb.AddForce(new Vector2(0f, 7f), ForceMode2D.Impulse);
+  }
+  
+```
 For this game, since this is a 2D platformer, you can use Transform.position changes along with the Axes (Horizontal, Vertical) to create the movement of the Player every frame, and Rigidbody velocity changes for the jump.
+
+Also, we would encourage you to implement player crouch movement while giving input from the user. Use proper [animations](https://github.com/outscal/Unity2D-Animation) for the crouch and play around with the box collider of the player. When the player crouch, then the collider should also change to the size of the player crouch and go back to its original size when the player returns to the idle state.
 
 Well!! Now, you can make a player move. Try it by yourself. Give yourself a chance. See ya!!
 
