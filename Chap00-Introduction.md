@@ -13,3 +13,16 @@ Download the asset, and drag and drop to Unity Projects folder. A good idea is t
 ![](https://media.giphy.com/media/mBukxOCWsdVAXIJUUW/giphy.gif)
 
 Once assets are loaded in Unity, we can try to create the movement for the player.
+
+## Enroll yourself and get rewarded when you complete the course 🎁
+
+As you learn and upskill yourself, you can earn learning points. These points can be redeemed for rewards, as well as in tournaments. Enroll yourself for the course by filling the form linked to the gif below and start earning your points
+
+**Click on the gif below and follow the instructions** ⏬
+
+[![Click me!](https://media.giphy.com/media/iKBAAfYNDu1dowhnEj/giphy.gif)](https://airtable.com/shrY0mnlrnJXaZjps)
+
+You can also click here - [Click Here!](https://airtable.com/shrY0mnlrnJXaZjps)
+
+*We will look into how to make player movement in much detail from the next section. 👉*
+
