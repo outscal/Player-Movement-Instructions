@@ -22,9 +22,7 @@ The Collider 2D types that can be used with **Rigidbody** 2D are:
 - [Capsule Collider 2D](https://docs.unity3d.com/Manual/class-CapsuleCollider2D.html) for circular or lozenge-shaped collision areas.
 - [Composite Collider 2D](https://docs.unity3d.com/Manual/class-CompositeCollider2D.html) for merging **Box Collider** 2Ds and Polygon Collider 2Ds.
 
-Coming to the second part of the Collider detection when you need the objects to pass through each other but maybe perform an action when their colliders come in touch, The Collider component provides the ‘Is Trigger’ box, which if ticked the objects will pass through each but certain functions or tasks may be performed. For example, in-game we might want the Player Object to pass through a door and go to the Next Level as shown in the below game.
-
-![Door](https://user-images.githubusercontent.com/44625252/152811350-7dd19631-47e6-43e6-a9e9-f775ca08581b.PNG)
+Coming to the second part of the Collider detection when you need the objects to pass through each other but maybe perform an action when their colliders come in touch, The Collider component provides the ‘Is Trigger’ box, which if ticked the objects will pass through each but certain functions or tasks may be performed. For example, in-game we might want the Player Object to pass through a door and go to the Next Level.
 
 While Scripting, MonoBehaviour functions can be used - OnCollisionEnter2D/Stay2D/Exit2D() and similarly OnTriggerEnter2D/Stay2D/Exit2D() based on if it is a collider or simply a trigger.
 
