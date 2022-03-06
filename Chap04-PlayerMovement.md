@@ -16,7 +16,6 @@ Understanding these different types of forces can be important to shaping the st
      player_animator.SetBool("IsJump", true);
      player_Rb.AddForce(new Vector2(0f, 7f), ForceMode2D.Impulse);
   }
-  
 ```
 For this game, since this is a 2D platformer, you can use Transform.position changes along with the Axes (Horizontal, Vertical) to create the movement of the Player every frame, and Rigidbody velocity changes for the jump.
 
