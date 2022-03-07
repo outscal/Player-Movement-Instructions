@@ -1,4 +1,4 @@
-# A. Single/Double/Triple Jump
+# Single/Double/Triple Jump
 
 
 Player Jump is one of the most crucial elements for this project. Before making the double jump or triple jump first, go through the *Player Movement* section to get an idea of how you can use physics in a particular game object to move it. Also, get yourself familiarized with the RigidBody2D, BoxCollider2D components.
