@@ -10,6 +10,18 @@ Player Movement can be achieved in different ways in unity, depending on the spe
 
 Understanding these different types of forces can be important to shaping the structure of the game as movement is probably the basic feature of any game. For example, the following code shows how a jump action that propels the object upward based on pressing a key input from the keyboard can be made to work by applying a velocity change to the Rigidbody component attached to the Player GameObject.
 
+But before implementing player movements you need to know how to take inputs from the keyboard to make a player move. Right???
+Unity has its Input Systems for taking input from devices. Unity supports many different devices like Keyboard, Mouse, Pen, TouchScreen, Sensor, Joystick, GamePad.
+For each of these devices, there are separate input functions. Hence, it's not possible to drop everything down here. But we will see some commonly used functions for the input.
+
+- Input.GetKeyDown(String name): It returns a bool and works only when you press down the input key according to the string name.
+- Input.GetKeyUp(String name): It returns a bool and works only when you release the input key according to the string name.
+- Input.GetAxisRaw(String name): It returns a float value(-1f to 1f) and the input key works according to the string name.
+
+Hey!! We also encourage you to google by yourself if you're stuck at something. 
+
+![Google](https://media.giphy.com/media/i3LMArNuYxnEY/giphy.gif)
+
 ```
   if ((vertical) && (isPickUp != true) && (onGround == true))
   {
