@@ -6,7 +6,7 @@ Yeahhhhhhhhh!! You made it! 🔥Congrats on completing Player Movement in Unity.
 
 Make a lot of noise, let the world know that you have taken your first steps in the industry. Maybe have a music party with your clan members on [Discord](https://discord.com/invite/R4hfXhsWjN)?
 
-### Take help from the [Player Movement](https://github.com/outscal/Feature-PlayerMovement) repo if you're stuck.
+### Take help from the [Player Movement](https://github.com/outscal/Feature-PlayerMovement/tree/SolutionStatement) repo if you're stuck.
 
 ![Solution Found!!](https://media.giphy.com/media/l2JhGIQGxzbaRzvq0/giphy.gif)
 
