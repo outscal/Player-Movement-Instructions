@@ -13,7 +13,21 @@ Here, you will learn how to implement Power-Ups or Collectibles.
 2. Use a collider and in the collider component click ✅ the “Is Trigger” option.
 3. Now, while implementing the logic, use compares tag to compare with the game object it collides with and after the collision, destroy the power-up game object.
 
-![powerups](https://user-images.githubusercontent.com/44625252/152814423-612839ee-044f-4050-9c20-e8161c8d5e25.png)
+```
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.CompareTag("powerUp"))
+        {
+            PickUp();
+        }
+    }
+
+
+    private void PickUp()
+    {
+        Destroy(powerUpObject.gameObject);
+    }
+```
 
 You can add tons of features here like, after collecting the item enabling the double jump ability to the player for some seconds. This way, the player could only double jump if he gets the power up feature and that too for a limited period of time. To do this you can add a timer or use coroutines, for which you can read in the Dash mechanism section. 
 
