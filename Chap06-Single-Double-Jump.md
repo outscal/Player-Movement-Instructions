@@ -7,7 +7,15 @@ Single Jump: If you have tried to write a code for jump mechanics then you must 
         
 Here is a code where you can get an idea of how to do it.
         
-![collision](https://user-images.githubusercontent.com/44625252/152814775-ba198674-bb92-4e76-bd7e-02d9896ab640.png)
+```
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Platform"))
+        {
+            onGround = true;
+        }
+    }
+```
 
 Also, this is not the end. You need to write a logic for OnCollisionExit2D as well. Do it by yourself. It will boost your confidence.
 
@@ -15,7 +23,59 @@ Double Jump: Can we use a counter for it? 🤔 It’s like if you press the UP A
     
 Let’s see a code and understand it.
         
-![doblejump](https://user-images.githubusercontent.com/44625252/152814891-30ebacac-d1cf-4679-b2de-20c4fd57e04f.png)
+```
+    void Update()
+    {
+        if (currentTime == 0f)
+        {
+            finishTimer = true;
+        }
+
+        bool vertical = Input.GetKeyDown(KeyCode.UpArrow);
+
+        if (currentTime == 0f || (finishTimer == true))
+        {
+
+            Player_Jump(vertical);
+        }
+
+
+        if ((isPickUp == true) && (currentTime > 0f) && finishTimer == false)
+        {
+            currentTime -= 1 * Time.deltaTime;
+            countDownText.text = currentTime.ToString("0");
+            PlayerDoubleJump(vertical);
+        }
+        else if (currentTime <= 0f)
+        {
+            currentTime = 0f;
+            countDownText.gameObject.SetActive(false);
+            isPickUp = false;
+        }
+    }
+
+    void Player_Jump(bool vertical)
+    {
+        if ((vertical) && (isPickUp != true) && (onGround == true))
+        {
+            Debug.Log("jump");
+            player_Rb.AddForce(new Vector2(0f, 7f), ForceMode2D.Impulse);
+        }
+    }
+    private void PlayerDoubleJump(bool vertical)
+    {
+        if (onGround == true)
+        {
+            extraJump = 1;
+        }
+
+        if ((vertical) && (extraJump > 0))
+        {
+            player_Rb.AddForce(new Vector2(0f, 7f), ForceMode2D.Impulse);
+            extraJump--;
+        }
+    }
+```
         
 Here, the counter is extraJump variable. By default, the game object has the ability to jump by once. So when extraJump is 1 then the game object will jump twice. The extraJump will only be available if the game object stands on the ground platform. The value of extraJump is decreased to zero so that when the player inputs the bound key(UP-ARROW) the second time, the extraJump would become 0, and the next time if the player continuously presses the key again, it wouldn't affect anything to the game object and the player won't be able to jump more than twice.
         
