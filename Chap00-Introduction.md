@@ -14,8 +14,7 @@ Download the asset, and drag and drop to Unity Projects folder. A good idea is t
 
 Once assets are loaded in Unity, we can try to create the movement for the player.
 
-But before going through the course, first check this problem statement repo and clone it.
-[Github Repository](https://github.com/outscal/Feature-PlayerMovement/tree/ProblemStatement)
+### But before going through the course, first check this problem statement repo and clone it. 👉 [Github Repository](https://github.com/outscal/Feature-PlayerMovement/tree/ProblemStatement)
 
 ## Enroll yourself and get rewarded when you complete the course 🎁
 
