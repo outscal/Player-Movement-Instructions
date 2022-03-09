@@ -20,6 +20,15 @@ As you learn and upskill yourself, you can earn learning points. These points ca
 
 You can also click here - [Click Here!](https://academy.outscal.com/welcome/build-in-public/assignments)
 
-I'll see you around!
+## What's next
+
+Polish your jump, make sure it feels right and maybe add a faster run to the character?
+
+Or you can build a level for your player to move around in - [Unity Tilemaps](https://academy.outscal.com/tilemaps)
+
+We have an active community to help you out as well. Join us here - [Discord](https://discord.com/invite/R4hfXhsWjN)
+
+I'll see you soon!
 
 ![Thumbs up!](https://media.giphy.com/media/3iAdf4po4DmCwItLgO/giphy.gif)
+
